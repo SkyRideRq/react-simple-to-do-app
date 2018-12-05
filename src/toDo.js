@@ -4,8 +4,8 @@ const ToDo = ({toDo, delToDo}) => {
     const toDoList = toDo.length ? (
         toDo.map(e => {
             return (
-                <div className="collection-item" key={e.id}>
-                    <span onClick={()=>{delToDo(e.id)}}>{e.content}</span>
+                <div className="collection-item" key={e.id} onClick={()=>{delToDo(e.id)}}>
+                    <span >{e.content}</span>
                 </div>
             )
         })
